@@ -1,13 +1,126 @@
 body {
   margin: 0;
+  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*{
+  margin:0px;
+  padding: 0px;
+}
+.board
+{
+  margin-top:200px;
+  margin-left:35%;
+  transform:translate(-50%, -50%);
+  width:280px;
+  height: 10%;
+}
 
+.board-row::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.cell{
+margin: 0px;
+width:80px;
+border: 1px solid black;
+background-color: transparent;
+border-radius: 9px;
+box-shadow: 1px 3px 3px black;
+font-size: 1.5rem;
+font-weight: 900;
+text-align: center;
+padding:20px;
+}
+
+
+.tic{
+display: inline-block;
+margin-left: -50%;
+margin: 0 auto;
+}
+.submit{
+  display: block;
+  border: 0.3px solid black;
+  margin-top: 20px;
+  margin-left:80px;
+  border-radius: 2px;
+  padding:2px;
+  font-size:  0.8rem;
+}
+
+header{
+  width:100%;
+  background-color: #000;
+  color:#fff;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.spanclass{
+  color: rgb(179, 228, 129);
+}
+.winner{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+}
+
+.reset{
+    border: 0.5px solid black;
+    padding : 2.5px;
+    border-radius: 2px;
+    margin-top: 25px;
+    margin-left: 28%;
+    cursor: pointer;
+}
+
+.table{
+  width:30%  !important;
+}
+
+.main-table{
+  margin-top:-573px;
+  margin-left: 70%;
+}
+
+.form-control{
+  float: left !important;
+  width:20% !important;
+  /* margin-top: 10%  !important; */
+  margin-left: 5% !important;
+}
+
+.btn{
+  text-align: center !important;
+  background-color: rgba(85, 85, 189, 0.719) !important;
+}
+.timer1{
+  margin-left: 20px;
+  margin-bottom: -95px;
+}
+.timer2{
+margin-left: 150px;
+margin-bottom: 20px;
+}
+
+.btn1{
+  margin-top: 3%  !important;
+  margin-left: 2% !important;
+}
+
+.resetbutton{
+  width: 40%;
+  margin-top: 7px;
+  margin-left: 15px;
+
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,
     monospace;
 }
